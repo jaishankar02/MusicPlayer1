@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--constum css link-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="background12"
+        style="background-image: url('images/background24.jpeg'); background-repeat: no-repeat;background-size: cover;">
+        <!-- navbar section -->
+        <nav>
+            <div class="navBrand">
+                <i class="fa-regular fa-circle-play fa-3x"></i> <span><strong>Music Player</strong></span>
+            </div>
+            <div class="playlistButton">
+                <button><strong>Playlist</strong></button>
+            </div>
+            <div class="navSearch">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-microphone fa-lg"></i>
+            </div>
+            <div class="navSetting">
+                <i class="fa-solid fa-gear fa-xl"></i>
+            </div>
+        </nav>
+
+
+        <div class="fullSection">
+            <div class="row">
+                <div class="col col-12 col-sm-12 col-lg-9 mainSection">
+                    <div class="popularSongs">
+                        <h2><strong>Popular Songs</strong></h2>
+                        <div class="row">
+                            <span class=" col-12 col-sm-6 col-md-5 popularSongrow1">
+                                <div class="popularSongsBox">
+                                    <div class="popularSongPicBox">
+                                        <img src="images/left and right - charlie puth ft. jk.jpg">
+                                    </div>
+                                    <div class="popularSongText">
+                                        <p><strong>Left and Right</strong><br>charlie puth ft. jungkook</p>
+                                    </div>
+                                </div>
+                                <div class="popularSongsBox">
+                                    <div class="popularSongPicBox">
+                                        <img src="images/Hum Nashe Mein Toh Nahin-Arijit Singh.jpg">
+                                    </div>
+                                    <div class="popularSongText">
+                                        <p><strong>Hum Nashe Mein Toh Nahin</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+
+                            </span>
+                            <span class="col-12 col-sm-6 col-md-5 offset-md-2">
+                                <div class="popularSongsBox">
+                                    <div class="popularSongPicBox">
+                                        <img src="images/Naacho Naacho - Vishal Mishra.jpg">
+                                    </div>
+                                    <div class="popularSongText">
+                                        <p><strong>Naacho Naacho</strong><br>Vishal Mishra</p>
+                                    </div>
+                                </div>
+                                <div class="popularSongsBox">
+                                    <div class="popularSongPicBox">
+                                        <img src="images/as it was - harry styles.png">
+                                    </div>
+                                    <div class="popularSongText">
+                                        <p><strong>As it Was</strong><br>Harry Styles</p>
+                                    </div>
+                                </div>
+
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="songlist">
+                        <div class="listName">
+                            <h3><strong>Latest Hindi songs</strong></h3>
+                        </div>
+                        <div class="songListbox">
+                            <span class="pre">
+                                <button><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+                            </span>
+                            <div class="songdiv LatestHin">
+                                <div class="card songListCard"  onclick="jai(this);">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard" id="jai">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="next">
+                                <button id="nextbutton"><i class="fa-solid fa-chevron-right fa-2x"></i></button> 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="favoriteArtist">
+                        <div class="listName">
+                            <h3><strong>Your Favorite Artists</strong></h3>
+                        </div>
+                        <div class="artistPicBox row">
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic ">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic ">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic ">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                            <div class="artistPic " id="notShowInMobile">
+                                <img src="images/Arijit Singh.jpg" alt="">
+                                <P><strong>Arijit Singh</strong></P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songlist">
+                        <div class="listName">
+                            <h3><strong>Latest English songs</strong></h3>
+                        </div>
+                        <div class="songListbox">
+                            <span class="pre">
+                                <button><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+                            </span>
+                            <div class="songdiv">
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="next">
+                                <button><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="songlist">
+                        <div class="listName">
+                            <h3><strong>Made for you</strong></h3>
+                        </div>
+                        <div class="songListbox">
+                            <span class="pre">
+                                <button><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+                            </span>
+                            <div class="songdiv">
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="next">
+                                <button><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="songlist">
+                        <div class="listName">
+                            <h3><strong>Sad songs</strong></h3>
+                        </div>
+                        <div class="songListbox">
+                            <span class="pre">
+                                <button><i class="fa-solid fa-chevron-left fa-2x"></i></button>
+                            </span>
+                            <div class="songdiv">
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                                <div class="card songListCard">
+                                    <img src="images/AashiquiAaGayi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text"><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="next">
+                                <button><i class="fa-solid fa-chevron-right fa-2x"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-lg-3 playlist">
+                    <div class="playlistHeading">
+                        <h2>Playlist</h2>
+                    </div>
+                    <div class="playlistbox">
+                        <div class="playlistSongBox">
+                            <span class="PlaylistSongPic">
+                                <img src="images/AashiquiAaGayi.jpg">
+                            </span>
+                            <span class="playlistSongText">
+                                <p><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                            </span>
+                        </div>
+                        <div class="playlistSongBox">
+                            <span class="PlaylistSongPic">
+                                <img src="images/AashiquiAaGayi.jpg">
+                            </span>
+                            <span class="playlistSongText">
+                                <p><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                            </span>
+                        </div>
+                        <div class="playlistSongBox">
+                            <span class="PlaylistSongPic">
+                                <img src="images/AashiquiAaGayi.jpg">
+                            </span>
+                            <span class="playlistSongText">
+                                <p><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                            </span>
+                        </div>
+                        <div class="playlistSongBox">
+                            <span class="PlaylistSongPic">
+                                <img src="images/AashiquiAaGayi.jpg">
+                            </span>
+                            <span class="playlistSongText">
+                                <p><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                            </span>
+                        </div>
+                        <div class="playlistSongBox">
+                            <span class="PlaylistSongPic">
+                                <img src="images/AashiquiAaGayi.jpg">
+                            </span>
+                            <span class="playlistSongText">
+                                <p><strong>Aashiqui Aa Gayi</strong><br>Arijit Singh</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="music">
+            <div class="musicBox">
+                <div class="musicPic">
+                    <img src="images/AashiquiAaGayi.jpg">
+                </div>
+            </div>
+            <div class="musicControl">
+                <audio controls src="songs\Kaun Tujhe (M S Dhoni - The Untold Story) 128.mp3" preload="metadata" id="myplayer">
+                </audio>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--javascript files-->
+    <script src="index.js"></script>
+    <!--font Awesome-->
+    <script src="https://kit.fontawesome.com/c5dba0f59b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
